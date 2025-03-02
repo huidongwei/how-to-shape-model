@@ -1,3 +1,5 @@
+
+
 import scalismo.geometry.Point3D
 import scalismo.geometry._3D
 import scalismo.io.LandmarkIO
@@ -7,6 +9,7 @@ import scalismo.registration.LandmarkRegistration
 import java.io.File
 
 @main def alignMeshes() =
+
   println("Aligning meshes and landmarks")
   val dataDir = new File("data/vertebrae/")
   val ref = MeshIO.readMesh(new File(dataDir, "ref_20.ply")).get
